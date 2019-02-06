@@ -1,0 +1,23 @@
+img {
+    width: 100%
+}
+
+#photo {
+    width: 25em;
+    margin: auto;
+    grid-area: photo;
+    position: absolute;
+}
+#gridwrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    grid-template: "photo";
+    width: 100vw;
+    height: 100vh;
+}
+#background {
+    position: absolute;
+}

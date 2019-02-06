@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sun &amp; Moon</title>
+	<meta content="Sun during day, moon at night." name="description">
+	<meta content="Kyle Brookes" name="author">
+	<link href="style/global.css" rel="stylesheet">
+</head>
+<body>
+	<div id="gridwrapper">
+		<div id="background">
+			<script>
+			     var currentDate = new Date;
+			     var hour = currentDate.getHours();
+			     alert(hour);
+			     if ( (hour >= 5) && (hour <= 17) ) {
+			     document.write("<img src=\"image/day.jpg\">");
+			     }
+			     else {
+			     document.write("<img src=\"image/night.jpg\">");
+			     }             
+			</script>
+		</div>
+		<div id="photo">
+			<script>
+			     var currentDate = new Date;
+			     var hour = currentDate.getHours();                   
+			     if ( (hour >= 5) && (hour <= 17) ) {
+			     document.write("<img src=\"image/sun.png\">");
+			     }                    
+			     else {
+			     document.write("<img src=\"image/moon.png\">");
+			     }
+			</script>
+		</div>
+	</div>
+</body>
+</html>
